@@ -9,9 +9,13 @@ require 'action_view/railtie'
 require 'action_cable/engine'
 require 'sprockets/railtie'
 require 'rails/test_unit/railtie'
+require 'mongoid'
+require 'database_cleaner'
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
+Mongoid.load!('config/mongoid.yml')
+
+DatabaseCleaner.strategy = :truncation
+
 Bundler.require(*Rails.groups)
 
 module CourseDiploma

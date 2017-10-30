@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-rails', '~> 4.2'
+gem 'haml-rails'
 gem 'mongoid'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.4ss'

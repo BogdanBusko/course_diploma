@@ -1,5 +1,8 @@
+category1 = Category.create(name: 'Programming')
+
 10.times do
   Course.create(
+    category_id: category1.id,
     name: Faker::Educator.course,
     price: Faker::Number.number(5),
     description: Faker::Educator.university,

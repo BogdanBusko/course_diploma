@@ -5,6 +5,8 @@ class Course
   embeds_many :contacts
   embeds_many :teachers
 
+  belongs_to :category
+
   field :name,              type: String
   field :duration,          type: String
   field :description,       type: String

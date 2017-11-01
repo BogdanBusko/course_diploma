@@ -3,6 +3,7 @@ class Course
   include Mongoid::Timestamps
 
   embeds_many :contacts
+  embeds_many :teachers
 
   field :name,              type: String
   field :duration,          type: String

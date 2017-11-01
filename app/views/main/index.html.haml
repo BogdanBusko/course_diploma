@@ -1,0 +1,15 @@
+.content
+  - @courses.each do |course|
+    .course
+      .name 
+        Назва:
+        = course.name
+      .price
+        Ціна:
+        = course.price
+      .organizer
+        Організатор:
+        = course.organizer
+      .start_date
+        Дата початку:
+        = course.start_date

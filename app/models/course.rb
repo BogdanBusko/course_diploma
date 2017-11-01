@@ -2,6 +2,8 @@ class Course
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  embeds_many :contacts
+
   field :name,              type: String
   field :duration,          type: String
   field :description,       type: String

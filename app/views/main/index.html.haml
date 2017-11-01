@@ -13,3 +13,20 @@
       .start_date
         Дата початку:
         = course.start_date
+      .contacts
+        %table
+          %tr
+            %td
+              Повне ім'я
+            %td
+              Телефон
+            %td
+              E-mail
+          - course.contacts.each do |contact|
+            %tr
+              %td
+                = contact.name
+              %td
+                = contact.phone
+              %td
+                = contact.email
